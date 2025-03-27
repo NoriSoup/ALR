@@ -1,0 +1,2 @@
+# ALR
+Azur Lane Regulator
