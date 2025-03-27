@@ -3,13 +3,13 @@ import math
 
 
 def load_role_name():
-    with open('../data/role.json', 'r', encoding='utf-8') as fp:
+    with open('json/role.json', 'r', encoding='utf-8') as fp:
         all_role_data = json.load(fp)
     return all_role_data.keys()
 
 
 def load_role_data(role_name):
-    with open('../data/role.json', 'r', encoding='utf-8') as fp:
+    with open('json/role.json', 'r', encoding='utf-8') as fp:
         all_role_data = json.load(fp)
     role_data = all_role_data[role_name]
     reload_data = role_data['reload']
@@ -20,14 +20,14 @@ def load_role_data(role_name):
 
 
 def load_plane_name(weapon_type):
-    with open('../data/plane.json', 'r', encoding='utf-8') as fp:
+    with open('json/plane.json', 'r', encoding='utf-8') as fp:
         all_plane_data = json.load(fp)
     plane_name = all_plane_data[weapon_type]
     return plane_name
 
 
 def load_plane_time(plane1, plane2, plane3):
-    with open('../data/plane.json', 'r', encoding='utf-8') as fp:
+    with open('json/plane.json', 'r', encoding='utf-8') as fp:
         all_plane_data = json.load(fp)
     all_plane_data = all_plane_data['7']
     plane_time = [all_plane_data[plane1], all_plane_data[plane2], all_plane_data[plane3]]
